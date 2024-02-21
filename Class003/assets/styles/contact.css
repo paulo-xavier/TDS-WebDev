@@ -1,0 +1,29 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex; 
+    justify-content: center; 
+    background-image: linear-gradient(#042940, #005C53);
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px #085280;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    width: 50%; 
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px #042940;
+}
+
+@media (max-width:542px ) {
+    main {
+        width: 80%; 
+    }
+}
