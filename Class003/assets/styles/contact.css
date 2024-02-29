@@ -14,16 +14,72 @@ h1 {
     text-shadow: 1px 1px 2px #085280;
 }
 
+h2 {
+    color: #5a6c1c;
+    border: 1px solid;
+    width: 40%;
+    padding: 10px;
+}
+
 main {
     background-color: white;
     padding: 20px;
     width: 50%; 
     border-radius: 15px;
     box-shadow: 2px 2px 4px #042940;
+    border: 2px solid #042940;
+}
+
+figure {
+    height: 200px;
+}
+
+.programmer {
+    width: inherit;
+    height: inherit;
+}
+
+footer {
+    background-color:#042940;
+    height: 400px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+footer .internal-navigation {
+    margin-top: 50px;
+}
+
+footer .internal-navigation li {
+    list-style-type:none;
+    transition: .3s all;
+}
+
+footer .internal-navigation li:hover {
+    color: #0c79bc;
+}
+
+footer .internal-navigation li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@media (max-width: 733px) {
+    h2 {
+        width: 70%;
+    }
 }
 
 @media (max-width:542px ) {
     main {
         width: 80%; 
+    }
+
+    h2 {
+        width: 80%;
     }
 }

@@ -1,0 +1,8 @@
+border 
+
+body {
+    border-color
+    border-style
+    border-width
+
+}
