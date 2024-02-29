@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    padding: 10px;
+
+    min-height: 80%;
+
+    /* background-color: aqua; */
+
+}
+
+main article {
+    font-family: cursive;
+    font-weight: 500;
+    background-color: #FE6347;
+    width: 50%;
+    padding: 15px;
+    height: auto;
+}
+
+main article h1 {
+    color: #FEFA06;
+    text-align: center;
+    font-size: 2em;
+}
+
+main article p {
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+
+/*Aside*/
+
+main aside {
+    font-family: 'Sedwick Ave', cursive;
+    width: 50%;
+
+    
+
+    /* background-color: green; */
+}
+
+main aside #the-scream-painting {
+    height: 280px;
+    width: 55%;
+    object-fit: cover;
+}
+
+main aside .painting-description {
+    margin: 15px 0px 0px 40px;
+
+    width: 90%;
+    /* background-color: orange; */
+
+}
+
+main aside .painting-description div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 38px;
+}
+
+main aside .painting-description div h2, 
+main aside .painting-description div p {
+    font-size: 1em;
+    border-bottom: 1px solid;
+    background-color: #fff;
+}
+
+main aside .painting-description div h2 {
+    width: 20%;
+    text-align: right
+}
+
+main aside .painting-description div p {
+    width: 70%;
+}
+
+
+footer {
+    font-family: 'Sedwick Ave', cursive;
+    text-align: center;
+    color: rgb(145, 145, 145);
+}
+
+
+@media (max-width: 1140px) {
+    main aside .painting-description .type-description h2, 
+    main aside .painting-description .type-description p {
+        height: 43px;
+    }    
+}
+
+@media (max-width: 907px) {
+    main aside .painting-description .dimensions-description h2, 
+    main aside .painting-description .dimensions-description p {
+        /* background-color: darkorange; */
+        height: 45px;
+        margin-top: 30px;
+    }
+
+    main aside .painting-description div {
+        column-gap: 20px;
+    }
+
+    main aside .painting-description {
+        margin: 15px 0px 0px 10px;
+    }
+    
+    main aside .painting-description .location-description {
+        height: 38px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 823px ) {
+    main aside .painting-description div h2 {
+        width: 30%;
+    }
+}
+
+@media (max-width: 689px) {
+
+}
