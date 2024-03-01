@@ -6,21 +6,56 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    background-color: #9b2918;
-    width: 100%;
-    height: 40px;
+
+.container {
+    margin: 0 auto;    
     margin-bottom: 10px;
-    padding: 30px;
+     width: 100%;
+    background: darkred;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
 }
 
-nav {
-    background-color: #741f11;
-    width: 100%;
+header h1 img {
+    height: 100px;
+    width: 100px;
 }
+
+header .cart {
+    background: url('../images/mario-cart.png') no-repeat;
+    background-size: contain;
+    
+        
+    font-size: 1em;
+    padding-right: 35px;
+    text-align: right;
+    width: 190px;
+    height: 40px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.menu-options ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header .menu-options {
+    position: absolute; 
+    bottom: 0;
+    right: 0;   
+}
+
+
 
 main {
-    background-color: #FF7A48;
+    background-color: #FF7A48;   
     height: 400px;
     padding: 30px;
     display: flex;

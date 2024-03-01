@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kainna - Display Flex explicação</title>
+
+    <style> 
+
+        #texto1 {
+            height: 100px;
+            width: 100px;
+            background: red;
+        }
+        #texto2 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        #text03 {
+            height: 100px;
+            width: 100px;
+            background: pink;
+        }
+
+        footer {
+            height: 100vh;
+            background-color: darkorange;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       @media (max-width: 763px) {
+            #texto1 {
+                background-color: black;
+            }
+
+            footer {
+                background-color: palegreen;
+            }
+       }
+        
+    </style>
+
+</head>
+<body>
+
+    <footer>
+
+        <div id="texto1"> texto 1</div>
+        <div id="texto2"> texto 2</div>
+        <div id="text03"> texto 3</div>
+
+    </footer>
+    
+</body>
+</html>

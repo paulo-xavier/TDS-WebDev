@@ -11,11 +11,7 @@ main {
     column-gap: 10px;
     width: 100%;
     padding: 10px;
-
     min-height: 80%;
-
-    /* background-color: aqua; */
-
 }
 
 main article {
@@ -38,30 +34,21 @@ main article p {
     font-size: 1.1em;
 }
 
-
 /*Aside*/
-
 main aside {
-    font-family: 'Sedwick Ave', cursive;
+    font-family: cursive;
     width: 50%;
-
-    
-
-    /* background-color: green; */
 }
 
 main aside #the-scream-painting {
-    height: 280px;
+    height: 60%;
     width: 55%;
     object-fit: cover;
 }
 
 main aside .painting-description {
     margin: 15px 0px 0px 40px;
-
     width: 90%;
-    /* background-color: orange; */
-
 }
 
 main aside .painting-description div {
@@ -80,20 +67,18 @@ main aside .painting-description div p {
 
 main aside .painting-description div h2 {
     width: 20%;
-    text-align: right
+    text-align: right;
 }
 
 main aside .painting-description div p {
     width: 70%;
 }
 
-
 footer {
-    font-family: 'Sedwick Ave', cursive;
+    font-family: cursive;
     text-align: center;
     color: rgb(145, 145, 145);
 }
-
 
 @media (max-width: 1140px) {
     main aside .painting-description .type-description h2, 
@@ -105,7 +90,6 @@ footer {
 @media (max-width: 907px) {
     main aside .painting-description .dimensions-description h2, 
     main aside .painting-description .dimensions-description p {
-        /* background-color: darkorange; */
         height: 45px;
         margin-top: 30px;
     }
@@ -128,8 +112,35 @@ footer {
     main aside .painting-description div h2 {
         width: 30%;
     }
+
+    main aside .painting-description .location-description h2 {
+        height: 45px;
+        margin-top: 15px;
+    }
+
+    main aside .painting-description .location-description p {
+        height: 48px;
+    }
 }
 
 @media (max-width: 689px) {
 
+    body {
+        padding: 10px;  
+    }
+    main {
+        flex-direction: column;
+    }
+
+    main article {
+        width: 90%;
+    }
+
+    main aside #the-scream-painting {
+        width: 100%;
+    }
+
+    main aside {
+        width: 95%;
+    }
 }
