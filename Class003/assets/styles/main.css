@@ -6,7 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .container {
     margin: 0 auto;    
     margin-bottom: 10px;
@@ -15,7 +14,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     position: relative;
 }
 
@@ -27,8 +25,6 @@ header h1 img {
 header .cart {
     background: url('../images/mario-cart.png') no-repeat;
     background-size: contain;
-    
-        
     font-size: 1em;
     padding-right: 35px;
     text-align: right;
@@ -40,8 +36,7 @@ header .cart {
     right: 0;
 }
 
-
-.menu-options ul li {
+header .menu-options ul li {
     display: inline;
     margin-left: 20px;
 }
@@ -52,8 +47,6 @@ header .menu-options {
     right: 0;   
 }
 
-
-
 main {
     background-color: #FF7A48;   
     height: 400px;
@@ -61,34 +54,34 @@ main {
     display: flex;
 }
 
-section {
+main section {
     background-color: #0593A2;
     width: 40%;
     height: 100%;
     margin-left: 30px;
 }
 
-figure {
+main section figure {
     display: flex;
     justify-content: center;
 }
 
-#mario {
+main section figure #mario {
     width: 70%;
     height: 70%;
 }
 
-#mario2 {
+main aside article #mario2 {
     width: 90%;
 }
 
-aside {
+main aside {
     background-color: #105f68;
     height: 100%;
     width: 100%;
 }
 
-article {
+main aside article {
     background-color: #0e4349;
     width: 50%;
     height: 90%;

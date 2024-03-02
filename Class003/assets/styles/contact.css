@@ -10,11 +10,11 @@ body {
     padding: 10px;
 }
 
-h1 {
+main h1 {
     text-shadow: 1px 1px 2px #085280;
 }
 
-h2 {
+main h2 {
     color: #5a6c1c;
     border: 1px solid;
     width: 40%;
@@ -30,26 +30,25 @@ main {
     border: 2px solid #042940;
 }
 
-figure {
+main figure {
     height: 200px;
 }
 
-.programmer {
-    width: inherit;
+main figure .programmer {
+    width: 100%;
     height: inherit;
+    object-fit: contain;
 }
 
 footer {
-    background-color:#042940;
-    height: 400px;
-    padding: 20px;
+    background-color:#005C53;
+    padding-top: 20px;
     color: white;
     text-align: center;
 }
 
-
 footer .internal-navigation {
-    margin-top: 50px;
+    margin-top: 50px;       
 }
 
 footer .internal-navigation li {
@@ -66,10 +65,8 @@ footer .internal-navigation li a {
     color: inherit;
 }
 
-
-
 @media (max-width: 733px) {
-    h2 {
+    main h2 {
         width: 70%;
     }
 }
@@ -79,7 +76,13 @@ footer .internal-navigation li a {
         width: 80%; 
     }
 
-    h2 {
+    main h2 {
         width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    footer .internal-navigation {
+        text-align: left;
     }
 }
