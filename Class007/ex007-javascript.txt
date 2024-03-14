@@ -1,0 +1,26 @@
+1- for (let numb = 0; numb < 10; numb++){ 
+		if (numb % 2 != 0) {
+			alert(numb)
+		} 
+} 
+
+
+2- let total  = 0
+
+for (let i = 0; i <= 100; i++) {
+    total+= i
+    
+}
+
+
+3- var people =  ['João', 'José', 'Maria', 'Sebastião', 'Antonio'] 
+
+people.forEach(p => {
+    if (p.length == 4) {
+        alert(p); 
+    }
+})
+
+
+4- var name =  prompt("Enter your name: ")
+alert("Hi " + name)
