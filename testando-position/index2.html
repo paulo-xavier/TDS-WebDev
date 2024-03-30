@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+
+    <style>
+        .quadrado {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+        }
+
+        .quadrado2 {
+            background-color: darkblue;
+            height: 100px;
+            width: 100px;
+        }
+
+        .relativo {
+            position: relative; 
+        }
+
+        .absoluto {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="quadrado relativo">
+        <div class="quadrado2 absoluto"></div>
+    </div>
+    
+</body>
+</html>
+
+<!-- Position
+
+Static -> Permance sempre em seu local original
+
+Relative -> Podemos acrescentar coordenadas extras de posicionamento (top, right, left, bottom) em relação a posição original do elemento. 
+
+Absolute -> Pega como referência qualquer elemento que seja seu pai na estrutura do HTML, onde o valor seja diferente de static (que é o padrão) e obedece às coordernadas de acordo com o tamanho total desse elemento pai.  Quando não há esse elemento, vai aplicar as coordenadas tendo como referência a porção visível da página no navegador.
+
+Fixed -> Sempre vai tomar como referência a porção visível do documento no navegador, mantendo essa posição inclusive quando há rolagem na tela. Precisa de configuração de posicionamento vertical (left/right) e uma horizontal (top/bottom)
+
+-->

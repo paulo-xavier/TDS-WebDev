@@ -1,0 +1,7 @@
+Display
+
+Block -> Permitem o redimensionamento tanto da largura quanto altura. Porém, não permitem que elementos vizinhos ocupem a mesma linha, já que eles ocupam toda ela. (div, section, ul, p)
+
+Inline -> Não permitem o redimensionamento de largura e altura, porém permitem a exibição de elementos em seu lado. (span, strong)
+
+Inline-block -> Junção de ambos. Permitem que outros elementos sejam definidos ao seu lado e permitem o redimensionamento tanto da largura quanto altura. 

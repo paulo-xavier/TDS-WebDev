@@ -1,0 +1,9 @@
+Position
+
+Static -> Permance sempre em seu local original
+
+Relative -> Podemos acrescentar coordenadas extras de posicionamento (top, right, left, bottom) em relação a posição original do elemento. 
+
+Absolute -> Pega como referência qualquer elemento que seja seu pai na estrutura do HTML, onde o valor seja diferente de static (que é o padrão) e obedece às coordernadas de acordo com o tamanho total desse elemento pai.  Quando não há esse elemento, vai aplicar as coordenadas tendo como referência a porção visível da página no navegador. 
+
+Fixed -> Sempre vai tomar como referência a porção visível do documento no navegador, mantendo essa posição inclusive quando há rolagem na tela. Precisa de configuração de posicionamento vertical (left/right) e uma horizontal (top/bottom)

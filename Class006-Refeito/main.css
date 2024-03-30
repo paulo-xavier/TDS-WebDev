@@ -1,0 +1,156 @@
+*{
+    list-style-type: none;
+}
+
+body{
+    color: #333333;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background-color: darkred;
+    color: white;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto; /*Change in the future to width 100%*/
+    width: 940px;
+}
+
+header .mario-image {
+    height: 100px;
+    width: 100px;
+}
+
+.carrinho {
+    background:url('mario-cart.png') no-repeat top right;
+    background-size: contain;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 180px;
+    height: 35px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-opcoes ul{
+    font-size: 15px;
+}
+
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes a {
+    /* color: #003366; */
+}
+
+.menu-opcoes {
+    /* background-color: darkblue; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*Container destaque*/
+
+.busca, 
+.menu-conteudo {
+    background-color: #061f78;
+    /* background-color: green; */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+    width: 240px;
+    float: left;
+    color: white;
+}
+
+.busca h2, 
+.busca form, 
+.menu-conteudo h2 {
+    margin: 10px;
+}
+
+.menu-conteudo li {
+    /* background-color: white; */
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-conteudo a {
+    /* color: white; */
+}
+
+.menu-conteudo {
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.busca input { /*Seletor de atributo*/
+    vertical-align: middle;
+}
+
+.busca input[type="search"] {
+    width: 170px;
+}
+
+.destaque {
+    margin-top: 10px;
+}
+
+
+
+/* Container paineis */
+
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    color: #b6adad;
+    /* background-color: darkmagenta; */
+}
+
+.aula1 {
+    float: left;
+    background-color: #08102c;
+}
+
+.aula2 {
+    float: right;
+    background: #08102c;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+
+    /* background-color: green; */
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.painel a {
+    font-size: 14px;
+    text-align: center;
+}

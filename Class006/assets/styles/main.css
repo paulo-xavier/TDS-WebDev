@@ -13,11 +13,8 @@ a {
 }
 
 a:hover {
-    /* color: rgb(29, 46, 105); */
     background-color: rgb(175, 32, 32);
-
 }
-
 
 
 .container {
@@ -28,8 +25,6 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-
-
 }
 
 header  img {
@@ -77,9 +72,7 @@ header .menu-options {
     flex-direction: column;
     align-items: start;
     height: 73vh;
-
     /* background-color: yellow; */
-    
 }
 
 .container-search .search {
@@ -96,8 +89,7 @@ header .menu-options {
 
 .container-search .search form input[type="search"] {
     height: 25px;
-    width: 80%;
-    
+    width: 80%;    
 }
 
 .container-search .search form input[type="image"] {
@@ -113,9 +105,14 @@ header .menu-options {
     margin-top: 50px;
 }
 
+.container-search img {
+    width: 50px;
+    height: 50px;
+    /* clear: both; */
+    margin-left: 150px;
+}
 
 .container-panel {
-    /* background: darkblue; */
     width: 80%;
     margin-top: 50px;
     margin-left: 100px;
@@ -130,18 +127,32 @@ header .menu-options {
     text-transform: uppercase;
 }
 
-.container .class1 {
+.container .class1, 
+.container .class3 {
     float: left;
     background-color: #040e32;
     padding: 20px;
     width: 40%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #7682aa;
 }
 
-.container .class2 {
+.container .class3 {
+    margin-top: 20px;
+}
+
+.container .class2, 
+.container .class4 {
     float: right;
     width: 40%;
     padding: 20px;
-    background-color: #040e32;
+    background-color: #08102c;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #7682aa;
+}
+
+.container .class4 {
+    margin-top: 20px;
 }
 
 .container .panel li {
@@ -162,7 +173,6 @@ footer img {
 footer .social a[href*="linkedin.com"] {
     background-image: url('../images/linkedin-logo.png');
     background-size: contain;
-
 }
 
  .social  a {
@@ -182,7 +192,6 @@ footer .social a[href*="linkedin.com"] {
     float: left;
 }
 
-
 footer .social a[href*="github.com"] {
     background-image: url('../images/github-logo.png');
     background-size: contain;
@@ -192,6 +201,3 @@ footer .container {
     background-color: inherit;
     width: 90%;
 }
-
-
-
