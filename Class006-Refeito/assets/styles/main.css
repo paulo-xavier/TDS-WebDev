@@ -5,6 +5,7 @@
 body{
     color: #333333;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+    background-color: #061F78;
 }
 
 a {
@@ -21,15 +22,17 @@ header {
 .container {
     margin: 0 auto; /*Change in the future to width 100%*/
     width: 940px;
+    position: relative;
 }
 
-header .mario-image {
+header .mario-image,
+footer .mario-image {
     height: 100px;
     width: 100px;
 }
 
 .carrinho {
-    background:url('mario-cart.png') no-repeat top right;
+    background:url('../images/mario-cart.png') no-repeat top right;
     background-size: contain;
     font-size: 14px;
     padding-right: 35px;
@@ -76,6 +79,10 @@ header .mario-image {
     color: white;
 }
 
+.busca {
+    background-color: #040E32;
+    border-radius: 5px;
+}
 .busca h2, 
 .busca form, 
 .menu-conteudo h2 {
@@ -125,12 +132,19 @@ header .mario-image {
 
 .aula1 {
     float: left;
+    clear: left;
     background-color: #08102c;
 }
 
 .aula2 {
     float: right;
     background: #08102c;
+}
+
+.aula1, 
+.aula2{
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #7682aa;
 }
 
 .painel li {
@@ -153,4 +167,46 @@ header .mario-image {
 .painel a {
     font-size: 14px;
     text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    background-color:  rgb(81, 1, 1);
+    clear: both;
+
+    width: 952px;
+    margin: 0 auto !important;
+}
+
+.social {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+}
+
+.social li {
+    float: left;
+    width: 50px;
+    
+}
+
+.social a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-indent: -9999px;
+
+}
+
+.social a[href*="linkedin.com"]{
+    background-image: url('../images/linkedin-logo.png');
+    background-size: contain;
+ 
+}
+
+.social a[href*="github.com"]{
+    background-image: url('../images/github-logo.png');
+    background-size: contain;
 }

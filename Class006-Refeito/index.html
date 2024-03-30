@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
     <title>Main</title>
 
     <header class="container">
 
-        <h1><img class="mario-image" src="mario-icon.png" alt="Paulo Xavier"></h1>
+        <h1><img class="mario-image" src="assets/images/mario-icon.png" alt="Paulo Xavier"></h1>
 
         <p class="carrinho">No items in the cart</p>
 
@@ -35,9 +35,9 @@
         <section class="busca">
             <h2>Busca</h2>
             
-            <form>
-                <input type="search">
-                <input type="image" src="mario-search.png">
+            <form action="https://www.google.com.br/search" id="form-busca">
+                <input type="search" name="q" id="q">
+                <input type="image" src="assets/images/mario-search.png">
             </form>
 
         </section>
@@ -58,6 +58,12 @@
             </nav>
         </section>
 
+        <img src="assets/images/mario1.png" alt="Imagem destaque">
+
+        <a href="#" class="pause">
+            <img class="botao-pausa" src="assets/images/pause.png" alt="Pause logo">
+        </a>
+
     </section>
 
     <div class="container paineis">
@@ -72,7 +78,7 @@
                 <li>
                     <a href="#">
                         <figure>
-                            <img src="html-exercise.png" alt="">
+                            <img src="assets/images/html-exercise.png" alt="">
                             <figcaption> Exercise 1 HTML</figcaption>
                         </figure>
                     </a>
@@ -81,7 +87,7 @@
                 <li>
                     <a href="#">
                         <figure>
-                            <img src="html-exercise.png" alt="">
+                            <img src="assets/images/html-exercise.png" alt="">
                             <figcaption> Exercise 2 HTML</figcaption>
                         </figure>
                     </a>
@@ -99,7 +105,7 @@
                 <li>
                     <a href="#">
                         <figure>
-                            <img src="html-exercise.png" alt="">
+                            <img src="assets/images/html-exercise.png" alt="">
                             <figcaption> Exercise 1 HTML</figcaption>
                         </figure>
                     </a>
@@ -108,7 +114,7 @@
                 <li>
                     <a href="#">
                         <figure>
-                            <img src="html-exercise.png" alt="">
+                            <img src="assets/images/html-exercise.png" alt="">
                             <figcaption> Exercise 2 HTML</figcaption>
                         </figure>
                     </a>
@@ -118,8 +124,30 @@
 
     </div>
 
-    <footer></footer>
-</head>
+    <footer>
+        <div class="container">
+
+            <img class="mario-image" src="assets/images/mario-icon.png" alt="Paulo Xavier">
+
+            <ul class="social">
+
+                <li>
+                    <a href="linkedin.com">Linkedin</a>
+                </li>
+                
+                <li>
+                    <a href="github.com/paulo-xavier">Github</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </footer>
+    </header>
+
+    <script src="assets/js/index.js"></script>
+
 <body>
 </body>
 </html>
