@@ -5,7 +5,11 @@
 body{
     color: #333333;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+    
     background-color: #061F78;
+
+
+
 }
 
 a {
@@ -26,13 +30,14 @@ header {
 }
 
 header .mario-image,
-footer .mario-image {
+footer .mario-image {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     height: 100px;
     width: 100px;
 }
 
 .carrinho {
-    background:url('../images/mario-cart.png') no-repeat top right;
+    background:url('../images/mario-cart.png') no-repeat top right;                     
+
     background-size: contain;
     font-size: 14px;
     padding-right: 35px;
@@ -54,7 +59,7 @@ footer .mario-image {
     margin-left: 20px;
 }
 
-.menu-opcoes a {
+.menu-opcoes  {
     /* color: #003366; */
 }
 
@@ -64,6 +69,17 @@ footer .mario-image {
     bottom: 0;
     right: 0;
 }
+
+.menu-opcoes a:hover {
+    /* color: rgb(81, 1, 1);; */
+    font-weight: bold;
+}
+
+.menu-opcoes a:active {
+    color: #0a206f;
+}
+
+
 
 /*Container destaque*/
 
@@ -95,6 +111,23 @@ footer .mario-image {
     padding: 5px 10px;
 }
 
+.menu-conteudo li ul {
+    display: none;
+}
+
+.menu-conteudo li:hover ul{
+    display: block;
+}
+
+.menu-conteudo ul ul li {
+    padding: 10px;
+    margin: 10px;
+    /* background-color: #0b2ba0; */
+    background-color: #0f3bdd;
+    border-radius: 5px;
+}
+
+
 .menu-conteudo a {
     /* color: white; */
 }
@@ -103,6 +136,10 @@ footer .mario-image {
     clear: left;
     margin-top: 10px;
     padding-bottom: 10px;
+}
+
+.menu-conteudo li li a:before{
+    content: "- ";
 }
 
 .busca input { /*Seletor de atributo*/
@@ -128,23 +165,38 @@ footer .mario-image {
     width: 445px;
     color: #b6adad;
     /* background-color: darkmagenta; */
+    /* border-radius: 4px; */
 }
 
-.aula1 {
-    float: left;
-    clear: left;
-    background-color: #08102c;
-}
+.painel li:hover {
+    box-shadow: 0 0 5px #4c4a4a;
+    transition: box-shadow 0.3s;
 
-.aula2 {
-    float: right;
-    background: #08102c;
+    transform: scale(1) rotate(-5deg);
 }
 
 .aula1, 
-.aula2{
+.aula3 {
+    float: left;
+    clear: left;
+    /* background-color: #08102c; */
+    background: linear-gradient(#08102c, #0d1944);
+}
+
+.aula2, 
+.aula4 {
+    float: right;
+    background: linear-gradient(#08102c, #0d1944);
+}
+
+.aula1, 
+.aula2, 
+.aula3, 
+.aula4{
     border-radius: 10px;
-    box-shadow: 1px 3px 3px #7682aa;
+    box-shadow:  1px 3px 3px #7682aa;
+
+    
 }
 
 .painel li {
@@ -189,7 +241,6 @@ footer {
 .social li {
     float: left;
     width: 50px;
-    
 }
 
 .social a {
@@ -197,13 +248,11 @@ footer {
     height: 40px;
     width: 40px;
     text-indent: -9999px;
-
 }
 
 .social a[href*="linkedin.com"]{
     background-image: url('../images/linkedin-logo.png');
     background-size: contain;
- 
 }
 
 .social a[href*="github.com"]{
