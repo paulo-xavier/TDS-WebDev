@@ -4,63 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/blog.css">
     <title>Calculadora</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .fundo{
-            height: 100vh;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        .calculadora{
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.8);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            border-radius: 15px;
-            padding: 15px;
-        }
-        .botao{
-            width: 100px;
-            height: 50px;
-            font-size: 25px;
-            cursor: pointer;
-            margin: 3px;
-            background-color: rgb(31, 31, 31);
-            border: none;
-            color: white;
-        }
-        .botao:hover{
-            background-color: black;
-        }
-        #resultado{
-            background-color: white;
-            width: 95%;
-            height: 30px;
-            margin: 5px;
-            font-size: 25px;
-            color: black;
-            text-align: right;
-            padding: 5px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            
-        }
-
-
-        .num-zero{
-            /* background-colo  */
-            background-color: red;
-            ;
-        }
-    </style>
+    
 </head>
 <body>
+
+    <h1> Calculadora</h1>
+
     <div class="fundo">
         <div class="calculadora">
             <h1>Calculadora</h1>
@@ -88,37 +39,63 @@
                     <td><button class="botao" onclick="insert(1)">1</button></td>
                     <td><button class="botao" onclick="insert(2)">2</button></td>
                     <td><button class="botao" onclick="insert(3)">3</button></td>
-                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                    <td rowspan="2"><button class="botao" id="num-calc" style="height: 106px;" onclick="calcular()">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="botao num-zero" style="width: 106px;" onclick="insert(0)">0</button></td>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert(0)">0</button></td>
                     <td> <button class="botao num-zero" onclick="insert('.')">.</button></td>
                 </tr>
             </table>
         </div>
-        <p>CLique para visualizar o quadro do  <a href="../Class004/index.html" ></a></p> 
-
-        
-        </p>
     </div>
-    <script>
-        function insert(num){
-            var numero = document.getElementById('resultado').innerHTML; 
-            document.getElementById('resultado').innerHTML = numero + num;
-        }
-        function clean(){
-            document.getElementById('resultado').innerHTML = "";
-        }
-        function back(){
-            var resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
-        }
-        function calcular(){
-            var resultado = document.getElementById('resultado').innerHTML;
-            if(resultado){
-                document.getElementById('resultado').innerHTML = eval(resultado);
-            }
-        }
-    </script>
+
+    <h1> O Grito </h1>
+
+    <main>
+        <article>
+            <h1>The Scream</h1>
+            <p>The Scream is a composition created by Norwegian artist Edvard Munch in 1893. The Norwegian name of the piece is Skrik (Scream), and the German title under which it was first exhibited is Der Schrei der Natur (The Scream of Nature). The agonized face in the painting has become one of the most iconic images in art, seen as symbolizing the anxiety of the human condition. Munch's work, including The Scream, had a formative influence on the Expressionist movement.[1] Munch created two versions in paint and two in pastels, as well as a lithograph stone from which several prints survive. Both painted versions have been stolen, but since recovered. In 2012, one of the pastel versions commanded the at-the-time highest nominal price paid for an artwork at a public auction.</p>
+        </article>
+
+        <aside>
+            <img id="the-scream-painting" src="./assets/images/the-scream-cover.jpg" alt="The Scream by Edvard Munch, a famous painting depicting a figure in distress against a colorful, swirling background">
+            
+            <div class="painting-description">
+                
+                <div class="artist-description">
+                    <h2>Artist</h2>
+                    <p>Edvard Munch</p>
+                </div>
+
+                <div class="year-description">
+                    <h2>Year</h2>
+                    <p>1983</p>
+                </div>
+
+                <div class="type-description">
+                    <h2>Type</h2>
+                    <p>Oil, tempera, pastel and crayon on cardboard</p>
+                </div>
+
+                <div class="dimensions-description">
+                    <h2>Dimensions</h2>
+                    <p>91 cm x 73.5 cm (36 in x 28.9 in)</p>
+                </div>
+
+                <div class="location-description">
+                    <h2>Location</h2>
+                    <p>National Gallery, Oslo, Norway</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+    
+    <footer>
+        <p>Copied from <a href="https://en.wikipedia.org/wiki/The_Scream" target="_blank">The Scream Wikipedia</a></p>
+    </footer>
+    <script src="assets/js/calculadora.js"> </script>
 </body>
 </html>
