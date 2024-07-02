@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular - Exercise 02</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>Title converter</h1>
+
+    <div ng-app="">
+        
+        <p>Title: <input type="text" ng-model="title" placeholder="Enter the title"></p>
+        <p>First paragraph: <input type="text" ng-model="paragraph1" placeholder="Enter the frist paragraph"></p>
+        <p>Second paragraph: <input type="text" ng-model="paragraph2" placeholder="Enter the second paragraph"></p>
+
+        <main style="margin-top: 100px;">
+            <h1>{{title}}</h1>
+            <p>{{paragraph1}}</p>
+            <p>{{paragraph2}}</p>
+        </main>
+
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>

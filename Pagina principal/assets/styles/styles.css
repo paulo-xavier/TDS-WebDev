@@ -1,0 +1,99 @@
+
+.image {
+    width: 450px;
+}
+
+body {
+    font-size: 1.2em;
+
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    column-gap: 50%;
+    width: 100%;
+}
+
+header .navitems {
+    display: flex;
+    column-gap: 50px;
+}
+
+header .navitems li {
+    height: 30px;
+    transition: all .2s;
+    cursor: pointer
+}
+
+header .navitems li:hover{
+    border-bottom:3px solid #4f6ba8;
+    
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+    margin-top: 100px; 
+    align-items: center;
+}
+
+
+.about-me h1 {
+    font-size: 2em;
+}
+
+.name {
+    color: #6987c9;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    margin-top: 40px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(#6987c9, #7999df);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background: linear-gradient(#4f6ba8, #7999df);    
+}
+
+ul.social-medias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+
+
+.nav-name {
+}          
+
+hr {
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+    color: #4f6ba8;
+}

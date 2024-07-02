@@ -1,0 +1,85 @@
+{
+    "School_subjects" : {
+        "Math": [
+        
+            {
+                "teacher" : "Lucas Alves"
+            },
+    
+            {
+                "students" : [
+                    "paulo",
+                    "Alexander",
+                    "Michael"
+                ]
+            }
+        ],
+        
+        "English": [
+            
+            {
+                "teacher" : "Vitor Hugo"
+            },
+    
+            {
+                "students" : [
+                    "Maria",
+                    "Ana",
+                    "Julia", 
+                    "Felipe"
+                ]
+            }
+        ],
+        
+        "Spanish": [
+            
+            {
+                "teacher" : "Mikaela Souza"
+            },
+    
+            {
+                "students" : [
+                    "paulo",
+                    "Jorge",
+                    "Anderson",
+                    "James", 
+                    "Julia", 
+                    "Edward"
+                ]
+            }
+        ],
+        
+        "Biology": [
+            
+            {
+                "teacher" : "Ricardo O. Pereira"
+            },
+    
+            {
+                "students" : [
+                    "Paula",
+                    "Wagner",
+                    "Carlos", 
+                    "Pedro"
+                ]
+            }
+        ],
+        
+        "Science": [
+            
+            {
+                "teacher" : "Priscila Silva"
+            },
+    
+            {
+                "students" : [
+                    "Nick",
+                    "Patrick",
+                    "Amanda", 
+                    "Jean", 
+                    "Guilherme"
+                ]
+            }
+        ]
+    }
+}

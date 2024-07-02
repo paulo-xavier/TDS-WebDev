@@ -1,0 +1,39 @@
+{
+    "User" : [
+        {
+            "name" : "Paulo Xavier", 
+            "age" : 19, 
+            "nin" : 223323232, 
+            "phone" : "51 9434-4343"
+        },
+        
+        {
+            "name" : "Mikaela Silva", 
+            "age" : 30, 
+            "nin" : 1923232223, 
+            "phone" : "51 9123-5678"
+        },
+        
+        {
+            "name" : "Edison Vargas", 
+            "age" : 40, 
+            "nin" : 867665655675, 
+            "phone" : "51 9344-7689"
+        },
+        
+        {
+            "name" : "Maria Xavier", 
+            "age" : 70, 
+            "nin" : 32453564645, 
+            "phone" : "51 9812-9278"
+        },
+        
+        {
+            "name" : "Sandro Silva", 
+            "age" : 45, 
+            "nin" : 3243343, 
+            "phone" : "51 9678-3443"
+        }
+    
+    ]
+}

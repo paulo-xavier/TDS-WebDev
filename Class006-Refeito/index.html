@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/mobile.css" media="(max-width:320px)">
     <link rel="stylesheet" href="assets/styles/mobile.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/reset.css">
+    <!-- <link rel="stylesheet" href="assets/styles/mobile.css" media="(max-width:320px)"> -->
+
+    <link rel="stylesheet" href="./assets/styles/mobile.css">
     <title>Main</title>
 
     <header class="container">
@@ -103,27 +105,20 @@
 
                     </li>
                     
-                    <!-- <li>
-                        <a href="#">Class 4</a>
-
-
-                        <ul>
-                            <li>
-                                <a href="#">Exercise 1</a>
-                            </li>
-
-                        </ul>
-
-                    </li> -->
                 </ul>
             </nav>
         </section>
 
-        <img src="assets/images/mario1.png" alt="Imagem destaque">
+        <figure>
+            <img src="assets/images/mario1.png" alt="Imagem destaque">
+        </figure>
 
         <a href="#" class="pause">
             <img class="botao-pausa" src="assets/images/pause.png" alt="Pause logo">
         </a>
+
+        <audio src="./assets/audio/mario-audio.mp3" controls></audio>
+        <input type="range" min="0" max="1" step="0.01" id="input-range">
 
     </section>
 

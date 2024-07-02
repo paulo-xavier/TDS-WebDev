@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Angular JS</title>
+</head>
+<body>
+
+    <div ng-app=""> 
+        <!-- Directive to describe that everything inside this tag is an Angular application -->
+
+        <p> My first Angular JS application!! </p>
+
+        <p>Name: <input type="text" ng-model="name" placeholder="Enter your name here"> </p> 
+        <!-- ng-model will store the value entered in the variable name -->
+
+        <h1> Your name is: {{name}}</h1>
+
+
+    </div>
+
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>

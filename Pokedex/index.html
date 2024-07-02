@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Pokedex - Frontend</title>
+</head>
+
+<body>
+    <main>
+
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="" class="poke-image">
+        
+        <h1 id="poke-name">25 - Pikachu</h1>
+
+        <div id="pokemon-info" class="disabled"> 
+
+            <h2 id="name"> Pikachu </h2>
+
+            <div class="poke-info-container">
+
+                <div class="poke-info-card">
+                    <p id="type">Type: Electric</p>
+                    <p id="weight">Weight: 60lb </p>
+                    <p id="height">Height: 4in</p>
+                </div>
+
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" class="poke-image-info">
+            
+            </div>
+
+            
+            <button class="close"> Close </button>
+        </div>
+
+        <div class="container-info">
+            <div class="container-search">
+                <input type="number" class="poke-number">
+                <button class="button-search">Search</button>
+            </div>
+            <button class="button-info">Info</button>
+        </div>
+
+        <audio controls>
+            <source src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg" type="audio/ogg">
+        </audio>
+
+
+    </main>
+    
+    
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+    "Math": [
+        "Paul", 
+        "Alexander",
+        "Michael"
+    ], 
+
+    "English": [
+        "Maria", 
+        "Ana", 
+        "Julia", 
+        "Paul"
+    ], 
+
+    "Spanish": [
+        "Jorge", 
+        "Anderson",
+        "James", 
+        "Julia", 
+        "Edward"
+    ], 
+
+    "Biology": [
+        "Paula", 
+        "Wagner", 
+        "Carlos", 
+        "Pedro"
+    ], 
+
+    "Science": [
+        "Nick", 
+        "Patrick", 
+        "Amanda", 
+        "Jean", 
+        "Guilherme"
+    ]
+}
+

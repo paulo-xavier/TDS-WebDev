@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Angular</title>
+</head>
+<body>
+
+    <h2> Example of Angular application with HTML elements</h2>
+
+    <p> The background color will be changed according to the user input</p>
+
+    <div ng-app="" ng-init="color='lightblue'">
+
+        <input style="background-color: {{color}}" ng-model="color" value="{{color}}">
+
+        <p> <strong> Color typed: </strong> {{color.toUpperCase()}}</p>
+
+        <span ng-init="amount=1000; value=100"> 
+            <p> Numerical expression: <span style="background-color:{{color}}"> {{amount * value}}</span></p>
+        </span>
+
+
+        <span ng-init="name='Paulo Roberto'; lastName='Xavier'"> 
+            <p style="color: {{color}}"> 
+                Full name: {{name + ' ' + lastName}}
+            </p>
+
+        </span>
+
+
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>
