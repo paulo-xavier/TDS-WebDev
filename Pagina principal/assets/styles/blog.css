@@ -2,6 +2,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+ul li {
+    list-style-type: none;
+}
+
 .image {
     width: 450px;
 }
@@ -38,9 +43,9 @@ header .navitems li {
     cursor: pointer
 }
 
-header .navitems li:hover{
-    border-bottom:3px solid #4f6ba8;
-    
+header .navitems li:hover {
+    border-bottom: 3px solid #4f6ba8;
+
 }
 
 
@@ -48,59 +53,6 @@ header .navitems li:hover{
     font-family: "Playwrite IT Moderna", cursive;
     font-size: 1.3em;
 }
-
-
-main {
-    display: flex;
-    justify-content: center;
-    column-gap: 200px;
-    margin-top: 50px; 
-    align-items: center;
-
-    flex-wrap: wrap;
-    /* background-color: red; */
-}
-
-
-.about-me h1 {
-    font-size: 2em;
-}
-
-.name {
-    color: #6987c9;
-}
-
-button {
-    width: 150px;
-    height: 60px;
-    margin-top: 40px;
-    font-size: 1em;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(#6987c9, #7999df);
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-button:hover {
-    background: linear-gradient(#4f6ba8, #7999df);    
-}
-
-ul.social-medias {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-}
-
-
-
-.nav-name {
-}          
 
 hr {
     width: 90%;
@@ -110,7 +62,67 @@ hr {
 }
 
 
+h1 {
+    font-size: 1.7em;
 
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.projects {
+    /* background-color: red;    */
+    padding: 20px;
+    width: 90%;
+
+    display: flex;
+    gap: 20px;
+    /* height: 100px; */
+
+    flex-wrap: wrap;
+
+    /* border-radius: 20px; */
+
+}
+
+.o-grito,
+.calculator,
+.pokedex,
+.sos-rs,
+.kimetsu,
+.advice-generator,
+.gta-project {
+    width: 20%;
+
+    height: 200px;
+
+    background-color: #728dc7;
+
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 35%;
+}
 
 
 @media (max-width: 1041px) {
@@ -118,6 +130,10 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    hr {
+        margin-top: 100px;
     }
 
     .o-grito,
@@ -138,20 +154,10 @@ hr {
     .navbar {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
-        padding: 20px;
-       
     }
+
     .navitems {
         justify-content: center;
-    }
-
-    ul.social-medias {
-        gap: 2px;
-    }
-
-    hr {
-        margin-top: 100px;
     }
 }
 
@@ -161,4 +167,3 @@ hr {
         margin-left: 10px;
     }
 }
-
